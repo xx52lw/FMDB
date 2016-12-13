@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15F34" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Classes" syncable="YES">
+        <attribute name="c_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="c_studentCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Student" syncable="YES">
+        <attribute name="s_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="s_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="s_class" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Classes" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Classes" positionX="-56" positionY="-108" width="128" height="73"/>
+        <element name="Student" positionX="108" positionY="144" width="279" height="88"/>
+    </elements>
+</model>
